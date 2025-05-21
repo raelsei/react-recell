@@ -1,79 +1,79 @@
 # Recell
 
-### 1. Projeyi Klonlama ve Klasöre Geçme
+### 1. Cloning the Project and Changing Directory
 
 ```bash
 git clone https://github.com/korayguler/react-recell
 cd react-recell
 ```
 
-### 2. Bağımlılıkları Yükleme
+### 2. Installing Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Projeyi Başlatma
+### 3. Starting the Project
 
-Bu proje hem bir JSON server hem de bir Vite geliştirme sunucusunu aynı anda çalıştırmak için `concurrently` paketini kullanır. Projeyi başlatmak için aşağıdaki komutu çalıştırın:
+This project uses the `concurrently` package to run both a JSON server and a Vite development server at the same time. To start the project, run the following command:
 
 ```bash
 npm start
 ```
 
-Bu komut, aşağıdaki iki komutu aynı anda çalıştıracaktır:
+This command will run the following two commands simultaneously:
 
-- Vite geliştirme sunucusu: Frontend React uygulaması için (http://localhost:3000)
-- JSON server: Mock API için (http://localhost:3001)
+- Vite development server: For the frontend React application (http://localhost:3000)
+- JSON server: For the mock API (http://localhost:3001)
 
-### 4. Projeyi Derleme
+### 4. Building the Project
 
 ```bash
 npm run build
 ```
 
-Bu komut, `dist` klasörüne derlenmiş dosyaları oluşturacaktır.
+This command will generate the compiled files in the `dist` folder.
 
-### 5. Projeyi Test Etme
+### 5. Testing the Project
 
 ```bash
 npm test
 ```
 
-Bu komut, testleri çalıştıracaktır.
+This command will run the tests.
 
-### Projede Kullanılan Önemli Teknolojiler
+### Key Technologies Used in the Project
 
 #### React
 
-- **React**: Kullanıcı arayüzleri oluşturmak için kullanılan bir JavaScript kütüphanesi. Projenin ana yapısını oluşturur.
+- **React**: A JavaScript library used to build user interfaces. It forms the main structure of the project.
 
 #### Vite
 
-- **Vite**: React uygulamasını hızlı bir şekilde geliştirmek ve yapılandırmak için kullanılan bir araçtır. Webpack’e göre daha hızlıdır ve modern geliştirme deneyimi sunar.
+- **Vite**: A tool used to quickly develop and configure React applications. It is faster than Webpack and offers a modern development experience.
 
 #### Zustand
 
-- **Zustand**: Global state yönetimi için kullanılan küçük ve esnek bir kütüphanedir. React'teki state yönetimini basit ve performanslı hale getirir. Bu projede alışveriş sepeti ve diğer global state'ler için Zustand kullanılmıştır.
+- **Zustand**: A small and flexible library used for global state management. It makes state management in React simple and performant. In this project, Zustand is used for the shopping cart and other global states.
 
 #### React Query (TanStack Query)
 
-- **@tanstack/react-query**: Sunucu verilerinin fetch edilmesi, cache’lenmesi, senkronize edilmesi ve güncellenmesi için kullanılan bir kütüphanedir. Bu proje, API isteklerini ve veri cache'lerini yönetmek için React Query kullanmaktadır.
+- **@tanstack/react-query**: A library used for fetching, caching, synchronizing, and updating server data. This project uses React Query to manage API requests and data caches.
 
 #### Tailwind CSS
 
-- **Tailwind CSS**: Hızlıca stil ekleyebilmek için kullanılan utility-first bir CSS framework'üdür. Proje içerisinde CSS'i yazarken daha hızlı ve düzenli bir şekilde stil eklemenizi sağlar.
+- **Tailwind CSS**: A utility-first CSS framework used to quickly add styles. It allows you to add styles faster and more organized while writing CSS in the project.
 
-#### Jest ve Testing Library
+#### Jest and Testing Library
 
-- **Jest**: JavaScript kodlarını test etmek için kullanılan popüler bir test framework'üdür.
-- **@testing-library/react**: React component'lerini test etmek için kullanılan bir kütüphanedir. Projede Jest ve Testing Library birlikte kullanılarak birim testler yazılmıştır.
+- **Jest**: A popular test framework used to test JavaScript code.
+- **@testing-library/react**: A library used to test React components. In the project, Jest and Testing Library are used together to write unit tests.
 
-#### Prettier ve ESLint
+#### Prettier and ESLint
 
-- **Prettier**: Kodunuzu otomatize bir şekilde formatlayan bir araçtır.
-- **ESLint**: JavaScript kodlarınızı analiz ederek olası hataları bulur ve kod standardizasyonunu sağlar.
+- **Prettier**: A tool that automatically formats your code.
+- **ESLint**: Analyzes your JavaScript code to find possible errors and ensures code standardization.
 
 #### JSON Server
 
-- **JSON Server**: Basit bir REST API oluşturmak için kullanılır. Bu proje, mock API servisi olarak JSON Server'ı kullanır.
+- **JSON Server**: Used to create a simple REST API. This project uses JSON Server as a mock API service.
